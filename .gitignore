@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# environments
+.env
+.venv
+env/
+venv/
+
+# packaging
+build/
+dist/
+*.egg-info/
+
+# tools
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.DS_Store

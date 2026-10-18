@@ -1,0 +1,13 @@
+services:
+  standoff2-bot:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_PATH: /app/data/standoff2.sqlite3
+    volumes:
+      - bot-data:/app/data
+
+volumes:
+  bot-data:
